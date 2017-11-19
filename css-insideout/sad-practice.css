@@ -1,0 +1,90 @@
+body {
+    background-color: #2ae9ff;
+    margin: 0px; /* This and the padding take out the space the browser puts in. */
+    padding: 0px;
+    display: flex; 
+    min-height: 100vh; /* This is 100% of the viewof the page. */
+    flex-direction: column; /* Makes the flex go up and down */
+}
+
+header {
+    min-height: 75px;
+    background-color: #00c5dc;
+    box-shadow: 0px 5px 10px rgba( 0, 0, 0, .3 ); /* the shadow under the header*/
+    z-index: 100; /* This puts the header on top of the next div */
+    color:white;
+    font-size:50px;
+}
+
+.content {
+    width: 900px;
+    margin: 0px auto; /* This is a way to hack getting things centered */
+    
+}
+
+.main-content {
+    height: 100%;
+    overflow: hidden; /* This hides what does not fit in the div */
+    background-color: #1ad3ef;
+}
+
+.main-content > * {
+    float: left;
+    background-color: #1ad3ef;
+} 
+
+main {
+    flex: 1;
+}
+
+#hero-img-wrapper {
+    height: 250px;
+    background-color: #0070ac;
+    background-image: url( ../images/bg.png );
+    background-size: 1.8%;
+    z-index: -100; /* This puts it behind the header */
+}
+
+#hero-img {
+    height: 100%;
+    overflow: hidden; /* This hides what does not fit in the div */
+}
+
+#hero-img div {
+    
+    padding: 0px;
+    margin: 0px;
+    float: left;
+}
+
+.character {
+    width: 200px;
+    height:100px;
+}
+
+footer {
+    background-color: #11a0c5;
+    min-height: 100px;
+}
+
+footer .content {
+    background-color: #0a98bf;
+    border: 0px;
+    min-height: 100px; /* This can become taller with content, but stays at least this tall*/
+}
+
+img[src="SADNESS_Fullbody_Render.png"] {
+    height:250px;
+    width: 150px;
+    z-index:300;
+}
+
+#content {
+    font-size: 65px;
+    color:white;
+    text-align: center;
+}
+
+p {
+    color:white;
+}
